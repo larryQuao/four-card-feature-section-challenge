@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.heading-light {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 200;
+}
+
+.heading-bold {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.heading-bold small {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=style.css.map */

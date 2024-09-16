@@ -1,0 +1,53 @@
+// Heading font decoration
+%heading-one-desktop{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight:200;
+}
+
+%heading-one-mobile{
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight:200;
+}
+
+%heading-two-desktop
+{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight:600;
+}
+
+%heading-two-mobile{
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight:600;
+}
+
+%heading-three-desktop{
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight:600;
+}
+
+%heading-three-mobile{
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight:600;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+.heading-light {
+    @extend %heading-one-mobile;
+}
+
+.heading-bold {
+    @extend %heading-two-mobile;
+
+    small {
+        @extend %heading-three-mobile
+    }
+}
