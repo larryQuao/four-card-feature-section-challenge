@@ -1,0 +1,21 @@
+@import 'colors';
+
+// cyan border top card
+%cyan-border-top {
+    border-top: 4px solid $primary-cyan;
+}
+
+//  blue border top card
+%blue-border-top {
+    border-top: 4px solid $primary-blue;
+}
+
+//  orange border top card
+%orange-border-top {
+    border-top: 4px solid $primary-orange;
+}
+
+//  red border top card
+%red-border-top {
+    border-top: 4px solid $primary-red;
+}

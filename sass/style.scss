@@ -1,8 +1,77 @@
+@import 'colors';
+@import 'font-decorations';
+@import 'card-border-colors';
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-@import 'colors';
-@import 'font-decorations';
+.container {
+    max-width: 312px;
+    margin: 0 auto;
+    margin-top: 5.625rem;
+    // border: 1px solid red;
+}
+
+.header-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    // border: 1px solid red;
+}
+
+.cards {
+    margin-top: 4.75rem;
+    // border: 1px dashed blue;
+
+    .horizontal-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        // border: 1px solid yellow;
+
+        .vertical-cards {
+            // border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    }
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 8px;
+    // border: 4px dashed;
+    box-shadow: 0px 4px 10px 2px $grayish-blue;
+
+    .image {
+        border: 1px solid;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        display: block;
+    }
+}
+
+.border-cyan{
+    @extend %cyan-border-top;
+}
+
+.border-red{
+    @extend %red-border-top;
+}
+
+.border-orange{
+    @extend %orange-border-top;
+}
+
+.border-blue{
+    @extend %blue-border-top;
+}
+
+footer {
+    margin-top: 2rem;
+}
