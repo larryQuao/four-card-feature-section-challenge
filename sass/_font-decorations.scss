@@ -38,16 +38,21 @@
 
 body{
     font-family:'Poppins', sans-serif;
+    color: $grayish-blue
 }
 
 .heading-light {
     @extend %heading-one-mobile;
+    color: $dark-blue;
 }
 
 .heading-bold {
     @extend %heading-two-mobile;
+    color: $dark-blue;
+}
 
-    small {
-        @extend %heading-three-mobile
-    }
+.small {
+    @extend %heading-three-mobile;
+    color: $dark-blue;
+    margin-bottom: 1rem;
 }
