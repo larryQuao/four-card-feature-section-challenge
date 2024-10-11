@@ -1,5 +1,5 @@
 // Heading font decoration
-%heading-one-desktop{
+@mixin heading-one-desktop{
     font-size: 2rem;
     line-height: 1.2;
     font-weight:200;
@@ -11,7 +11,7 @@
     font-weight:200;
 }
 
-%heading-two-desktop
+@mixin heading-two-desktop
 {
     font-size: 2rem;
     line-height: 1.2;
@@ -24,7 +24,7 @@
     font-weight:600;
 }
 
-%heading-three-desktop{
+@mixin heading-three-desktop{
     font-size: 1.75rem;
     line-height: 1.2;
     font-weight:600;
@@ -55,4 +55,18 @@ body{
     @extend %heading-three-mobile;
     color: $dark-blue;
     margin-bottom: 1rem;
+}
+
+@media (min-width: 1440px) {
+    .heading-light {
+        @include heading-one-desktop;
+    }
+
+    .heading-bold {
+        @include heading-two-desktop;
+    }
+
+    .small {
+        @include heading-three-desktop;
+    }
 }
